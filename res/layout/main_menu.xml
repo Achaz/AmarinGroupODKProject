@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical"
+    android:background="#e8e8e8"
+    android:padding="0dp" >
+
+    <com.cengalabs.flatui.views.FlatTextView
+        android:id="@+id/main_menu_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="1dp"
+        android:paddingTop="6dp"
+        android:text="@string/app_name"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <com.cengalabs.flatui.views.FlatTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="1dp"
+        android:text="@string/main_menu_details"
+        android:textSize="17sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp" />
+
+            <com.cengalabs.flatui.views.FlatButton
+                android:id="@+id/enter_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="21sp"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                flatui:fl_textAppearance="fl_light" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <com.cengalabs.flatui.views.FlatButton
+                android:id="@+id/review_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="21sp"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                flatui:fl_textAppearance="fl_light" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:id="@+id/review_spacer" />
+
+            <com.cengalabs.flatui.views.FlatButton
+                android:id="@+id/send_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="21sp"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                flatui:fl_textAppearance="fl_light" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <com.cengalabs.flatui.views.FlatButton
+                android:id="@+id/get_forms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="21sp"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                flatui:fl_textAppearance="fl_light" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:id="@+id/get_forms_spacer" />
+
+            <com.cengalabs.flatui.views.FlatButton
+                android:id="@+id/manage_forms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="21sp"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                flatui:fl_textAppearance="fl_light" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
